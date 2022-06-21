@@ -5,7 +5,7 @@ import com.udemy.entities.Persona;
 public class PasoPorReferencia {
 
     public static void main(String[] args) {
-       Persona persona_1 = new Persona("David",500.0,true);
+       Persona persona_1 = new Persona("David",true);
        persona_1.setNombre("Juan");
         System.out.println("persona1 : " + persona_1.toString());
         System.out.println("persona1 Nombre: " + persona_1.getNombre());
@@ -20,6 +20,5 @@ public class PasoPorReferencia {
         persona.setNombre("Karla");
         persona.setActivo(false);
         persona.setApellido("Palacios");
-        persona.setSueldo(1500.);
     }
 }

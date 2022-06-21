@@ -2,10 +2,19 @@ package com.udemy.entities;
 
 public class Persona {
     // Atributos
-    private String nombre;
-    private String apellido;
-    private boolean activo;
-    private Double sueldo;
+    // Modificadores de Acceso:
+    /*
+    private: solo es accesible dentro de la clase
+    protected: es accesible para cualquier clase que hereda la clase
+
+     */
+
+    protected String nombre;
+    protected char genero;
+    protected int edad;
+    protected String direccion;
+    protected String apellido;
+    protected boolean activo;
 
     public String getNombre() {
         return nombre;
@@ -31,19 +40,52 @@ public class Persona {
         this.activo = activo;
     }
 
-    public Double getSueldo() {
-        return sueldo;
+    public char getGenero() {
+        return genero;
     }
 
-    public void setSueldo(Double sueldo) {
-        this.sueldo = sueldo;
+    public void setGenero(char genero) {
+        this.genero = genero;
+    }
+
+    public int getEdad() {
+        return edad;
+    }
+
+    public void setEdad(int edad) {
+        this.edad = edad;
+    }
+
+    public String getDireccion() {
+        return direccion;
+    }
+
+    public void setDireccion(String direccion) {
+        this.direccion = direccion;
     }
 
     // Métodos de la clase
     public Persona(){}
-    public Persona(String nombre, Double sueldo, boolean activo){
+    public Persona(String nombre){
         this.nombre = nombre;
-        this.sueldo = sueldo;
+    }
+    public Persona(String nombre, char genero, int edad, String direccion) {
+        this.nombre = nombre;
+        this.genero = genero;
+        this.edad = edad;
+        this.direccion = direccion;
+    }
+    public Persona(String nombre, char genero, int edad, String direccion, String apellido, boolean activo) {
+        this.nombre = nombre;
+        this.genero = genero;
+        this.edad = edad;
+        this.direccion = direccion;
+        this.apellido = apellido;
+        this.activo = activo;
+    }
+
+    public Persona(String nombre, boolean activo){
+        this.nombre = nombre;
         this.activo = activo;
     }
     public void desplegarInformacion(){
@@ -53,11 +95,14 @@ public class Persona {
 
     @Override
     public String toString() {
-        return "Persona{" +
-                "nombre='" + nombre + '\'' +
-                ", apellido='" + apellido + '\'' +
-                ", activo=" + activo +
-                ", sueldo=" + sueldo +
-                '}';
+        final StringBuilder sb = new StringBuilder("Persona{");
+        sb.append("nombre='").append(nombre).append('\'');
+        sb.append(", genero=").append(genero);
+        sb.append(", edad=").append(edad);
+        sb.append(", direccion='").append(direccion).append('\'');
+        sb.append(", apellido='").append(apellido).append('\'');
+        sb.append(", activo=").append(activo);
+        sb.append('}');
+        return sb.toString();
     }
 }
