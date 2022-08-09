@@ -1,4 +1,4 @@
-package com.udemy.entities;
+package com.udemy.fundamentos.entities;
 
 public class Empleado extends Persona{
     private int idEmpleado;

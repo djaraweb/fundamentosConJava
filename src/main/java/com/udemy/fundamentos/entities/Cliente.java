@@ -1,4 +1,4 @@
-package com.udemy.entities;
+package com.udemy.fundamentos.entities;
 
 import java.util.Date;
 

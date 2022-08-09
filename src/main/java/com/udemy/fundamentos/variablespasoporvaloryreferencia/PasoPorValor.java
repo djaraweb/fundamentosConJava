@@ -1,4 +1,4 @@
-package com.udemy.variablespasoporvaloryreferencia;
+package com.udemy.fundamentos.variablespasoporvaloryreferencia;
 
 public class PasoPorValor {
 

@@ -1,7 +1,7 @@
-package com.udemy.entities;
+package com.udemy.fundamentos.entities;
 
-//import com.udemy.entities.Cliente;
-//import com.udemy.entities.Empleado;
+//import com.udemy.fundamentos.entities.Cliente;
+//import com.udemy.fundamentos.entities.Empleado;
 
 import java.util.Date;
 

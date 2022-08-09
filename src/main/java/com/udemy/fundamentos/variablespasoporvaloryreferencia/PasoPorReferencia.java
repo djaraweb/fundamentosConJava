@@ -1,6 +1,6 @@
-package com.udemy.variablespasoporvaloryreferencia;
+package com.udemy.fundamentos.variablespasoporvaloryreferencia;
 
-import com.udemy.entities.Persona;
+import com.udemy.fundamentos.entities.Persona;
 
 public class PasoPorReferencia {
 

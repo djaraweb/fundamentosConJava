@@ -1,4 +1,4 @@
-package com.udemy.usodepalabrafinal;
+package com.udemy.fundamentos.usodepalabrafinal;
 
 public class TestFinal {
 

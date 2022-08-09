@@ -1,4 +1,4 @@
-package com.udemy.arreglos;
+package com.udemy.fundamentos.arreglos;
 
 public class Persona {
     private String nombre;

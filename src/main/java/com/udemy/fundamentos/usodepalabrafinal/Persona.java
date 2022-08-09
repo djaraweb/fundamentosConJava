@@ -1,4 +1,4 @@
-package com.udemy.usodepalabrafinal;
+package com.udemy.fundamentos.usodepalabrafinal;
 
 // Si la clase se declara como final no se podra heredar por ninguna clase.
 // Cannot inherit from final   public final class Persona

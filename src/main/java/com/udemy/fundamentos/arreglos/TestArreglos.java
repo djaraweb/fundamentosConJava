@@ -1,4 +1,4 @@
-package com.udemy.arreglos;
+package com.udemy.fundamentos.arreglos;
 
 public class TestArreglos {
     public static void main(String[] args) {
