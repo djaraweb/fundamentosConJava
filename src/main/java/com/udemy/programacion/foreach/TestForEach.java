@@ -15,5 +15,17 @@ public class TestForEach {
             System.out.println("persona = " + persona);
         }
 
+        System.out.println("***************************************");
+        mostrarNumerosParesImpares(1,5,20,14,85,26);
+    }
+
+    private static void mostrarNumerosParesImpares(int... numeros)
+    {
+        for(int numero: numeros){
+            if (numero%2==0)
+                System.out.println("Numero: (" + numero + ") es par");
+            else
+                System.out.println("Numero: (" + numero + ") es impar");
+        }
     }
 }
