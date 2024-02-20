@@ -6,7 +6,7 @@ public class TestConversionObjetos {
         Empleado empleado;
         empleado = new Escritor("Juan", 1500., TipoEscritura.CLASICO);
 
-        System.out.println("empleado = " + empleado);
+        System.out.println("employable = " + empleado);
 
         System.out.println(empleado.obtenerDetalles());
         //down casting
@@ -15,9 +15,8 @@ public class TestConversionObjetos {
         escritor.getTipoEscritura();
 
         // up casting no es necesario
-        Empleado empleado1 = escritor;
-        System.out.println(empleado1.obtenerDetalles());
-
+        empleado = escritor;
+        System.out.println(empleado.obtenerDetalles());
 
     }
 }
