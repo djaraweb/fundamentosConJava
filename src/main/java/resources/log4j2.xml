@@ -1,25 +1,28 @@
-<!--<Configuration >
-    <Appenders>
-        <Console name="Console" target="SYSTEM_OUT">
-            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
-        </Console>
-        
-        <File name="File" fileName="logs/app.log">
-            <PatternLayout>
-                <Pattern>%d %p %c [%t] %m%n</Pattern>
-            </PatternLayout>
-        </File>
-    </Appenders>
-    <Loggers>
-        <Logger name="pe.edu.cibertec.capitulo10" additivity="false">
-            <AppenderRef ref="File"/>
-            <AppenderRef ref="Console"/>
-        </Logger>
-        
-        <Root level="debug">
-            <AppenderRef ref="File"/>
-            <AppenderRef ref="Console"/>
-        </Root>
-    </Loggers>
-</Configuration>-->
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration status="WARN">
+    <Properties>
+        <Property name="pattern">%d{HH:mm:ss.SSS} %-5level %logger{36} - %msg%n</Property>
+    </Properties>
 
+    <appenders>
+        <File name="logsInfo" fileName="src/main/resources/logs/informativeLogs.log" append="true">
+            <PatternLayout pattern="${pattern}"/>
+        </File>
+
+        <File name="logsDebug" fileName="src/main/resources/logs/debugLogs.log" append="true">
+            <PatternLayout pattern="${pattern}"/>
+        </File>
+
+        <File name="logsTrace" fileName="src/main/resources/logs/traceLogs.log" append="true">
+            <PatternLayout pattern="${pattern}"/>
+        </File>
+    </appenders>
+
+    <loggers>
+        <root level="trace">
+            <appender-ref ref="logsInfo" level="info"/>
+            <appender-ref ref="logsDebug" level="debug"/>
+            <appender-ref ref="logsTrace" level="trace"/>
+        </root>
+    </loggers>
+</configuration>
